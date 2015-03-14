@@ -1,0 +1,15 @@
+# Site settings
+title: Home
+email: andres.fortier@gmail.com
+description:
+baseurl: ""
+url: "http://andres-fortier.github.io/"
+github_username: andres-fortier
+
+# Build settings
+# Build settings
+markdown: redcarpet
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
