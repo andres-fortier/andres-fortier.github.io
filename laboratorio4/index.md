@@ -8,3 +8,4 @@ title: Laboratorio 4 - UTN - SMA
 ## Clases
 
 * [Clase 1](slides/Clase01.pdf)
+* [Clase 2](slides/Clase02.pdf)
