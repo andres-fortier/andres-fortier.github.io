@@ -12,4 +12,6 @@ title: Laboratorio 4 - UTN - SMA
 * Clase 2
   * [Transparencias](material/Clase02.pdf)
 * Clase 3
+  * [Transparencias](material/Clase03.pdf)
   * [Archivos grep](material/Clase03Comando.tar.gz)
+  * [Práctica 2 de Programación 3](material/Programacion3-Practica2.pdf)
