@@ -17,3 +17,5 @@ title: Laboratorio 4 - UTN - SMA
   * [Práctica 2 de Programación 3](material/Programacion3-Practica2.pdf)
 * Clase 4
   * [Transparencias](material/Clase04.pdf)
+* Clase 5
+  * [Transparencias](material/Clase05.pdf)
