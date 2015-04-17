@@ -23,3 +23,5 @@ title: Laboratorio 4 - UTN - SMA
   * [Transparencias](material/Clase06.pdf)
 * Clase 7
   * [Transparencias](material/Clase07.pdf)
+* Clase 8
+  * [CGI Python - hello.py](material/hello.py)
