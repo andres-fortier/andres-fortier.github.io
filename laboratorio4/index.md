@@ -31,3 +31,24 @@ title: Laboratorio 4 - UTN - SMA
   * [Transparencias](material/Clase09.pdf)
 * Clase 10
   * [Transparencias](material/Clase10.pdf)
+* Clase 11
+  * [Transparencias](material/Clase11.pdf)
+* Clase 12
+
+  ```ruby
+  <% if @article.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+      this article from being saved:</h2>
+    <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  ```
+
+
+
+
