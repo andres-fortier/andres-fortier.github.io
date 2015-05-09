@@ -34,6 +34,7 @@ title: Laboratorio 4 - UTN - SMA
 * Clase 11
   * [Transparencias](material/Clase11.pdf)
 * Clase 12
+  * [Transparencias](material/Clase12.pdf)
 
   ```ruby
   <% if @article.errors.any? %>
