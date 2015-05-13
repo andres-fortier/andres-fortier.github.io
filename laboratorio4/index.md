@@ -49,7 +49,6 @@ title: Laboratorio 4 - UTN - SMA
   </div>
   <% end %>
   ```
-
-
-
+* Clase 13
+  * [Transparencias](material/Clase13.pdf)
 
