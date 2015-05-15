@@ -51,4 +51,35 @@ title: Laboratorio 4 - UTN - SMA
   ```
 * Clase 13
   * [Transparencias](material/Clase13.pdf)
+* Clase 14
+
+Primer seed
+
+  ```ruby
+joeUser = User.new(
+  :email                 => "joe@example.com",
+  :password              => "12345678",
+  :password_confirmation => "12345678"
+)
+joeUser.save!
+
+janeUser = User.new(
+  :email                 => "jane@example.com",
+  :password              => "12345678",
+  :password_confirmation => "12345678"
+)
+janeUser.save!
+  ```
+
+Segundo seed
+
+  ```ruby
+Article.create!(title: 'First Post',  text: 'My first post!', author: joeUser);
+Article.create!(title: 'Second Post', text: 'Another post',   author: joeUser);
+Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
+  ```
+
+
+
+
 
