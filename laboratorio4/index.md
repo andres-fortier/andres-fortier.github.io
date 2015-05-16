@@ -52,6 +52,7 @@ title: Laboratorio 4 - UTN - SMA
 * Clase 13
   * [Transparencias](material/Clase13.pdf)
 * Clase 14
+  * [Transparencias](material/Clase14.pdf)
 
 Primer seed
 
