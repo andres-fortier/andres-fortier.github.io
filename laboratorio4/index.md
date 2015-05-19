@@ -80,6 +80,15 @@ Article.create!(title: 'Second Post', text: 'Another post',   author: joeUser);
 Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
   ```
 
+* Clase 15
+
+  ```ruby
+  config.authorize_with do |controller|
+    unless current_user.has_role? :admin
+      redirect_to main_app.root_path
+    end
+  end
+  ```
 
 
 
