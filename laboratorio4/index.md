@@ -81,6 +81,7 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
   ```
 
 * Clase 15
+  * [Transparencias](material/Clase15.pdf)
 
   ```ruby
   config.authorize_with do |controller|
