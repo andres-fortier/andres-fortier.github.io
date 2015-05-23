@@ -90,7 +90,6 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
     end
   end
   ```
-
-
-
+* Clase 16
+  * [Transparencias](material/Clase16.pdf)
 
