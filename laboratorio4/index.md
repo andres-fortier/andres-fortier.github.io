@@ -98,3 +98,5 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
   * [Transparencias](material/Clase18.pdf)
 * Clase 19
   * [Transparencias](material/Clase19.pdf)
+* Clase 20
+  * [Transparencias](material/Clase20.pdf)
