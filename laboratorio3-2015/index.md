@@ -11,4 +11,8 @@ title: Laboratorio 3 - UTN - SMA - 2015
   * [Imagen de Pharo 3.0 con Ozono para linux](material/pharo3.0.zip)
 
 <!-- * [Transparencias](material/Clase01.pdf) -->
+
+## Prácticas
+  * [Práctica1](material/Practica1.pdf)
+
   
