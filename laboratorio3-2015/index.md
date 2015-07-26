@@ -14,5 +14,4 @@ title: Laboratorio 3 - UTN - SMA - 2015
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
-
-  
+ 
