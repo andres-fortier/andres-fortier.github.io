@@ -9,8 +9,8 @@ title: Laboratorio 3 - UTN - SMA - 2015
 
 ### Clase 1
   * [Imagen de Pharo 3.0 con Ozono para linux](material/pharo3.0.zip)
-
-<!-- * [Transparencias](material/Clase01.pdf) -->
+  * [Transparencias](material/Clase01.pdf)
+  * <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version" /target="_blank">Página de la herramienta Ozono</a> (ver <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version/ObjectBrowser-manual.pdf?attredirects=0" target="_blank">manual</a>)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
