@@ -12,6 +12,9 @@ title: Laboratorio 3 - UTN - SMA - 2015
   * [Transparencias](material/Clase01.pdf)
   * <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version" /target="_blank">Página de la herramienta Ozono</a> (ver <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version/ObjectBrowser-manual.pdf?attredirects=0" target="_blank">manual</a>)
 
+### Clase 2
+  * [Contador Ozono](material/contador.o3.zip)
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
  
