@@ -18,6 +18,12 @@ title: Laboratorio 3 - UTN - SMA - 2015
   * [Contador Ozono](material/contador.o3.zip)
   * [Transparencias](material/Clase02.pdf)
 
+### Clase 3
+  * Consulta de práctica
+
+### Clase 4
+  * [Caja de Ahorro Ozono](material/cajaAhorro.ob.zip)
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
  
