@@ -23,7 +23,12 @@ title: Laboratorio 3 - UTN - SMA - 2015
 
 ### Clase 4
   * [Caja de Ahorro Ozono](material/cajaAhorro.ob.zip)
+  * [Transparencias](material/Clase04.pdf)
+
+### Clase 5
+  * [Transparencias](material/Clase05.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
+  * [Práctica2](material/Practica2.pdf)
  
