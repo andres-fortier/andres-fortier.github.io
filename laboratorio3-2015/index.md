@@ -31,6 +31,9 @@ title: Laboratorio 3 - UTN - SMA - 2015
 ### Clase 6
   * [Transparencias](material/Clase06.pdf)
 
+### Clase 7
+  * [Transparencias](material/Clase07.pdf)
+
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
