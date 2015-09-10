@@ -134,5 +134,5 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
-  * [Práctica2](material/Practica3.pdf)
+  * [Práctica3](material/Practica3.pdf)
  
