@@ -127,8 +127,12 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 #('Programación' 'hola' 'apa' 'Laboratorio') detect: [:palabra | palabra size < 5].
 ```
 
+### Clase 11
+  * [Transparencias](material/Clase11.pdf)
+
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
+  * [Práctica2](material/Practica3.pdf)
  
