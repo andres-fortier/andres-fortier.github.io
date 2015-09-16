@@ -130,6 +130,12 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ### Clase 11
   * [Transparencias](material/Clase11.pdf)
 
+### Clase 12
+  * [Transparencias](material/Clase12.pdf)
+
+### Clase 13
+  * [Transparencias](material/Clase13.pdf)
+
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
