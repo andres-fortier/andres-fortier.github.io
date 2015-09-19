@@ -45,6 +45,10 @@ title: Programación 3 - UTN - SMA - 2015
 ### Clase 13
   * [Transparencias](material/Clase13.pdf)
 
+### Clase 14
+  * Parcial 1 - Fecha 1.
+
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
