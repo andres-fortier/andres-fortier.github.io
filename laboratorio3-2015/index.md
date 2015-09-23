@@ -139,6 +139,10 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ### Clase 14
   * [Transparencias](material/Clase14.pdf)
 
+### Clase 15
+  * [Transparencias](material/Clase15.pdf)
+
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
