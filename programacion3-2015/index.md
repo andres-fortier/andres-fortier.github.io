@@ -54,4 +54,4 @@ title: Programación 3 - UTN - SMA - 2015
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
-
+  * [Práctica3](material/Practica3.pdf)
