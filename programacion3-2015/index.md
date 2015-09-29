@@ -7,6 +7,15 @@ title: Programación 3 - UTN - SMA - 2015
 
 ## [Calendario Tentativo](material/CalendarioTentativo2doSemestre.pdf)
 
+
+## Design Patterns
+[Non-Software Examples of Software Design Patterns](http://wwwswt.informatik.uni-rostock.de/deutsch/Lehre/Uebung/Beispiele/PatternExamples/patexamples.htm)
+[The Design Patterns - Smalltalk Companion](http://content.yudu.com/Library/A1osj1/TheDesignPatternSmal/resources/83.htm)
+
+### Template Method
+  * [(Draft) Design Patterns - Smalltalk Companion: Template Method](material/DesignPatternsSmalltalkCompanion_TemplateMethod.pdf)
+  * [Template Method](http://www.oodesign.com/template-method-pattern.html)
+
 ## Clases
 
 ### Clase 1
@@ -50,6 +59,9 @@ title: Programación 3 - UTN - SMA - 2015
 
 ### Clase 15
   * [Transparencias](material/Clase15.pdf)
+
+### Clase 16
+  * [Transparencias](material/Clase16.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
