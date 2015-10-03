@@ -63,6 +63,9 @@ title: Programación 3 - UTN - SMA - 2015
 ### Clase 16
   * [Transparencias](material/Clase16.pdf)
 
+### Clase 17
+  * [Video Club](material/VideoClub.pdf)
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
