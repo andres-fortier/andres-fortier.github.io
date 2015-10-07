@@ -66,6 +66,9 @@ title: Programación 3 - UTN - SMA - 2015
 ### Clase 17
   * [Video Club](material/VideoClub.pdf)
 
+### Clase 18
+  * Resolución en clase del Ejercicio 4, Práctica 3.
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
