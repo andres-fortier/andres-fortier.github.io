@@ -151,6 +151,8 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ### Clase 19
   * [Transparencias](material/Clase19.pdf)
 
+### Clase 20
+  * [Transparencias](material/Clase20.pdf)
 
 
 ## Prácticas
@@ -158,4 +160,4 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
   * [Práctica2](material/Practica2.pdf)
   * [Práctica3](material/Practica3.pdf)
   * [Práctica4](material/Practica4.pdf)
- 
+  * [Práctica5](material/Practica5.pdf)
