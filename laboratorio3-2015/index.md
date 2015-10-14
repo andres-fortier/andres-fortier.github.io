@@ -154,6 +154,8 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ### Clase 20
   * [Transparencias](material/Clase20.pdf)
 
+### Clase 21
+  * [Transparencias](material/Clase21.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
