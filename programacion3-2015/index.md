@@ -16,6 +16,11 @@ title: Programación 3 - UTN - SMA - 2015
   * [(Draft) Design Patterns - Smalltalk Companion: Template Method](material/DesignPatternsSmalltalkCompanion_TemplateMethod.pdf)
   * [Template Method](http://www.oodesign.com/template-method-pattern.html)
 
+### Null Object
+  * [Null Object Pattern - Bobby Woolf](http://www.cs.wustl.edu/~schmidt/PLoP-96/woolf1.ps.gz)
+  * [Null Object - Something for Nothing](http://www.two-sdg.demon.co.uk/curbralan/papers/europlop/NullObject.pdf)
+  * [Null Object Pattern](http://www.oodesign.com/null-object-pattern.html)
+
 ## Clases
 
 ### Clase 1
@@ -71,6 +76,9 @@ title: Programación 3 - UTN - SMA - 2015
 
 ### Clase 19
   * Resolución en clase del Ejercicio 8, Práctica 3.
+
+### Clase 20
+  * [Transparencias](material/Clase20.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
