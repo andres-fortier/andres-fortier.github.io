@@ -21,6 +21,10 @@ title: Programación 3 - UTN - SMA - 2015
   * [Null Object - Something for Nothing](http://www.two-sdg.demon.co.uk/curbralan/papers/europlop/NullObject.pdf)
   * [Null Object Pattern](http://www.oodesign.com/null-object-pattern.html)
 
+### State
+  * [State Design Pattern](https://sourcemaking.com/design_patterns/state)
+  * [Game Programming Patterns - Design Patterns Revisited - State](http://gameprogrammingpatterns.com/state.html)
+
 ## Clases
 
 ### Clase 1
@@ -79,6 +83,9 @@ title: Programación 3 - UTN - SMA - 2015
 
 ### Clase 20
   * [Transparencias](material/Clase20.pdf)
+
+### Clase 21
+  * [Transparencias](material/Clase21.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
