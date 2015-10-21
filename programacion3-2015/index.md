@@ -25,6 +25,10 @@ title: Programación 3 - UTN - SMA - 2015
   * [State Design Pattern](https://sourcemaking.com/design_patterns/state)
   * [Game Programming Patterns - Design Patterns Revisited - State](http://gameprogrammingpatterns.com/state.html)
 
+### Adapter
+  * [Adapter Design Pattern](https://sourcemaking.com/design_patterns/adapter)
+  * [Adapter Pattern](http://www.oodesign.com/adapter-pattern.html)
+
 ## Clases
 
 ### Clase 1
@@ -86,6 +90,9 @@ title: Programación 3 - UTN - SMA - 2015
 
 ### Clase 21
   * [Transparencias](material/Clase21.pdf)
+
+### Clase 22
+  * [Transparencias](material/Clase22.pdf)
 
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
