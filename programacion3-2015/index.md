@@ -94,6 +94,9 @@ title: Programación 3 - UTN - SMA - 2015
 ### Clase 22
   * [Transparencias](material/Clase22.pdf)
 
+### Clase 23
+  * Consulta de práctica
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)

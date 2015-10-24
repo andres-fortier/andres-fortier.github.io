@@ -160,6 +160,12 @@ numeros asSortedCollection: [:unNumero :otroNumero | unNumero > otroNumero].
 ### Clase 22
   * [Transparencias](material/Clase22.pdf)
 
+### Clase 23
+  * Consulta de práctica
+
+### Clase 24
+  * [Transparencias](material/Clase24.pdf)
+
 ## Prácticas
   * [Práctica1](material/Practica1.pdf)
   * [Práctica2](material/Practica2.pdf)
