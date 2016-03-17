@@ -56,7 +56,7 @@ title: Laboratorio 4 - UTN - SMA
 
 Primer seed
 
-  ```ruby
+```ruby
 joeUser = User.new(
   :email                 => "joe@example.com",
   :password              => "12345678",
@@ -70,15 +70,15 @@ janeUser = User.new(
   :password_confirmation => "12345678"
 )
 janeUser.save!
-  ```
+```
 
 Segundo seed
 
-  ```ruby
+```ruby
 Article.create!(title: 'First Post',  text: 'My first post!', author: joeUser);
 Article.create!(title: 'Second Post', text: 'Another post',   author: joeUser);
 Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
-  ```
+```
 
 * Clase 15
   * [Transparencias](material/Clase15.pdf)

@@ -12,7 +12,7 @@ title: Laboratorio 3 - UTN - SMA - 2015
 ### Clase 1
   * [Imagen de Pharo 3.0 con Ozono para linux](material/pharo3.0.zip)
   * [Transparencias](material/Clase01.pdf)
-  * <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version" /target="_blank">Página de la herramienta Ozono</a> (ver <a href="http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version/ObjectBrowser-manual.pdf?attredirects=0" target="_blank">manual</a>)
+  * [Página de la herramienta Ozono](http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version) (ver [manual](http://www.pdep.com.ar/Home/software/software-pharo/object-browser-ultima-version/ObjectBrowser-manual.pdf?attredirects=0))
 
 ### Clase 2
   * [Contador Ozono](material/contador.o3.zip)
@@ -44,7 +44,7 @@ title: Laboratorio 3 - UTN - SMA - 2015
   * [Transparencias](material/Clase10.pdf)
   * Algunos playgrounds (en cada paso inspeccionar el resultado y la colección)
 
-```
+```smalltalk
 numeros := Array new: 10.
 numeros size.
 numeros first.
@@ -59,7 +59,7 @@ numeros select: [:numero | numero > 3].
 numeros collect: [:numero | numero ** 2].
 ```
 
-```
+```smalltalk
 numeros := OrderedCollection new.
 numeros size.
 numeros isEmpty.
@@ -77,7 +77,7 @@ numeros select: [:numero | numero > 3].
 numeros collect: [:numero | numero ** 2].
 ```
 
-```
+```smalltalk
 numeros := SortedCollection sortBlock: [:unNumero :otroNumero | unNumero > otroNumero].
 numeros size.
 numeros add: 10.
@@ -92,7 +92,7 @@ numeros select: [:numero | numero > 20].
 numeros collect: [:numero | numero printString].
 ```
 
-```
+```smalltalk
 numeros := Set new.
 numeros add: 10; add: 20; add: 10; add: 5;  add: 10.
 numeros add: 15.
@@ -103,7 +103,7 @@ numeros select: [:numero | numero > 10].
 numeros collect: [:numero | numero ** 2].
 ``` 
 
-```
+```smalltalk
 numeros := #(1 3 6 89 22 3 12 6 89).
 
 numeros asOrderedCollection.
