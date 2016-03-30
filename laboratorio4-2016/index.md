@@ -13,3 +13,5 @@ title: Laboratorio 4 - UTN - SMA
 * Clase 3
   * [Archivos grep](material/Clase03Comando.tar.gz)
   * [Transparencias](material/Clase03.pdf)
+* Clase 4
+  * [Transparencias](material/Clase04.pdf)
