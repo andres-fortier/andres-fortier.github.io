@@ -33,3 +33,5 @@ title: Laboratorio 4 - UTN - SMA
   * [Transparencias](material/Clase11.pdf)
 * Clase 12
   * [Transparencias](material/Clase12.pdf)
+* Clase 13
+  * [Transparencias](material/Clase13.pdf)
