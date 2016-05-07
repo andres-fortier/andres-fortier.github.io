@@ -39,6 +39,7 @@ title: Laboratorio 4 - UTN - SMA
   * [Transparencias](material/Clase14.pdf)
 * Clase 15
   * [Transparencias](material/Clase15.pdf)
+
 Primer seed
 
 ```ruby
