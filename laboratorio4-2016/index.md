@@ -65,5 +65,5 @@ Article.create!(title: 'First Post',  text: 'My first post!', author: joeUser);
 Article.create!(title: 'Second Post', text: 'Another post',   author: joeUser);
 Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
 ```
-
-
+* Clase 16
+  * [Transparencias](material/Clase16.pdf)
