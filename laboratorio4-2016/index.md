@@ -70,6 +70,7 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
 * Clase 17
   * [Transparencias](material/Clase17.pdf)
 * Clase 18
+
 ```ruby
 <% @article.categories.each do |category| %>
   <span class="label label-primary">
