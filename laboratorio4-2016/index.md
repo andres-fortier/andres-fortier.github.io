@@ -79,3 +79,6 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
   </span>
 <% end %>
 ```
+* Clase 19
+  * [Transparencias](material/Clase19.pdf)
+
