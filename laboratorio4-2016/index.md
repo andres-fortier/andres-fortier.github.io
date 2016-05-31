@@ -84,6 +84,7 @@ Article.create!(title: 'Third Post',  text: 'Yet another',    author: janeUser);
 
 * Clase 20
   * [Transparencias](material/Clase20.pdf)
+
 ```ruby
 require "rails_helper"
 
