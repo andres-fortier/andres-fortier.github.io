@@ -251,4 +251,5 @@ RSpec.describe ArticlesController, :type => :controller do
   end
 end
 ```
-
+* Clase 21
+  * [Transparencias](material/Clase21.pdf)
