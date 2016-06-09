@@ -253,3 +253,5 @@ end
 ```
 * Clase 21
   * [Transparencias](material/Clase21.pdf)
+* Clase 22
+  * [Transparencias](material/Clase22.pdf)
