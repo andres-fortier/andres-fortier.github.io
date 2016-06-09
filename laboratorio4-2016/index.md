@@ -255,3 +255,100 @@ end
   * [Transparencias](material/Clase21.pdf)
 * Clase 22
   * [Transparencias](material/Clase22.pdf)
+* Clase 23
+
+```
+<%= f.fields_for :profile do |ff| %>
+ <div class="form-group">
+  <%= ff.label :first_name %>
+  <%= ff.text_field :first_name, class: 'form-control' %>
+ </div>
+ <div class="form-group">
+  <%= ff.label :last_name %>
+  <%= ff.text_field :last_name, class: 'form-control' %>
+ </div>
+ <div class="form-group">
+  <%= ff.label :date_of_birth %>
+  <%= ff.date_field :date_of_birth, class: 'form-control' %>
+ </div>
+<% end %>
+```
+
+```
+class RegistrationsController < Devise::RegistrationsController
+
+  private
+
+  def account_update_params
+    params
+     .require(:user)
+     .permit(:email, :password, :password_confirmation, 
+       :current_password,
+       profile_attributes: [
+         :id, 
+         :first_name, 
+         :last_name, 
+         :date_of_birth
+     ])
+  end
+end
+```
+
+```
+<% if user_signed_in? %>
+  <li> <p class="navbar-text"> Logged in as
+    <% if current_user.profile.first_name.present? %>
+      <%= current_user.profile.first_name %>
+    <% else %>
+      <%= current_user.email %>
+    <% end %>
+  </p> <li>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  </li>
+<% else %>
+```
+
+```
+class ProfilesController < ApplicationController
+  after_action :verify_authorized
+
+  def edit
+    @profile = current_user.profile
+    authorize @profile
+  end
+
+  def update
+    @profile = current_user.profile
+    authorize @profile
+    @profile.update!(profile_params)
+    flash[:notice] = "Your profile has been updated."
+    render 'edit'
+  end
+
+ private
+
+  def profile_params
+    params.require(:profile).permit(:first_name, :last_name, :date_of_birth)
+  end
+end
+```
+
+```
+<%= form_for @profile do |f| %>
+ <div class="form-group">
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name, class: 'form-control' %>
+ </div>
+ <div class="form-group">
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, class: 'form-control' %>
+ </div>
+ <div class="form-group">
+  <%= f.label :date_of_birth %>
+  <%= f.date_field :date_of_birth, class: 'form-control' %>
+ </div>
+  <p>
+    <%= f.submit 'Update', :class => 'btn btn-primary' %>
+  </p>
+<% end %>
+```
