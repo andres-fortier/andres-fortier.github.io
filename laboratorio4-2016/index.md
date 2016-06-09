@@ -257,7 +257,7 @@ end
   * [Transparencias](material/Clase22.pdf)
 * Clase 23
 
-```
+```ruby
 <%= f.fields_for :profile do |ff| %>
  <div class="form-group">
   <%= ff.label :first_name %>
@@ -274,7 +274,7 @@ end
 <% end %>
 ```
 
-```
+```ruby
 class RegistrationsController < Devise::RegistrationsController
 
   private
@@ -294,7 +294,7 @@ class RegistrationsController < Devise::RegistrationsController
 end
 ```
 
-```
+```ruby
 <% if user_signed_in? %>
   <li> <p class="navbar-text"> Logged in as
     <% if current_user.profile.first_name.present? %>
@@ -308,7 +308,7 @@ end
 <% else %>
 ```
 
-```
+```ruby
 class ProfilesController < ApplicationController
   after_action :verify_authorized
 
@@ -333,7 +333,7 @@ class ProfilesController < ApplicationController
 end
 ```
 
-```
+```ruby
 <%= form_for @profile do |f| %>
  <div class="form-group">
   <%= f.label :first_name %>
