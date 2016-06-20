@@ -256,6 +256,7 @@ end
 * Clase 22
   * [Transparencias](material/Clase22.pdf)
 * Clase 23
+  * [Transparencias](material/Clase23.pdf)
 
 ```ruby
 <%= f.fields_for :profile do |ff| %>
@@ -352,3 +353,131 @@ end
   </p>
 <% end %>
 ```
+
+* Clase 24
+
+```ruby
+if @profile.phones.empty?
+  @profile.phones << Phone.new(
+    phone_type: 'Mobile', 
+    number: '(011) 154789345634')
+end
+```
+
+```html
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Phones</h3>
+    </div>
+    <div class="panel-body">
+      <%= f.fields_for :phones do | form_builder | %>
+        <%= render "phone_fields", :f => form_builder %>
+      <% end %>
+    </div>
+  </div>
+```
+
+```html
+<div class="form-inline">
+   <div class="form-group">
+    <%= f.label :phone_type %>
+    <%= f.select(:phone_type,
+       ['Mobile', 'Work', 'Home'], 
+       {}, 
+       {:class => 'form-control'}) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :number %>
+    <%= f.text_field :number, class: 'form-control' %>
+  </div>
+</div>
+```
+
+```html
+  <div class="form-group">
+    <%= f.check_box :_destroy %>
+    <%= f.label :_destroy, "Remove" %>
+  </div>
+```
+
+```html
+  <div class="form-group">
+    <%= f.hidden_field :_destroy %>
+    <a href="#" onclick="removePhone(this)">Remove</a>
+  </div>
+```
+
+```html
+function removePhone(linkNode) {
+  var link = $(linkNode);
+  var myFormGroup = link.parent();
+  console.log(myFormGroup.find("input[type=hidden]"));
+}
+```
+
+```ruby
+    if @profile.phones.empty?
+      @profile.phones << Phone.new(phone_type: 'Mobile', number: '11')
+      @profile.phones << Phone.new(phone_type: 'Mobile', number: '22')
+      @profile.phones << Phone.new(phone_type: 'Mobile', number: '33')
+    end
+```
+
+```ruby
+<%
+ new_phone = Phone.new
+ fields = f.fields_for(:phones, new_phone) do |fb|
+  render("phone_fields", :f => fb)
+ end
+ js = escape_javascript(fields)
+ fn = html_escape("addPhone($('#phones'), \"#{js}\")")
+ concat(raw("<a href=\"#\" onclick=\"#{fn}\">Add</a>"))
+%>
+```
+
+```ruby
+<%
+ new_phone = Phone.new
+ fields = f.fields_for(:phones, 
+	new_phone, 
+	:child_index => "id_placeholder") do |fb|
+  render("phone_fields", :f => fb)
+ end
+ js = escape_javascript(fields)
+ fn = html_escape("addPhone($('#phones'), \"#{js}\")")
+ concat(raw("<a href=\"#\" onclick=\"#{fn}\">Add</a>"))
+%>
+```
+
+```javascript
+function addPhone($parent, formHTML) {
+  var new_id = new Date().getTime();
+  var regexp = new RegExp("id_placeholder", "g");
+  var content = formHTML.replace(regexp, new_id)
+  $parent.append(content);
+}
+```
+
+```html
+  <div class="form-group">
+    <%= f.hidden_field :_destroy %>
+    <a href="#" class="btn btn-warning" onclick="removePhone(this)">
+      <span class="glyphicon glyphicon-minus"></span>
+    </a>
+  </div>
+```
+
+```ruby
+<%
+ new_phone = Phone.new
+ fields = f.fields_for(:phones, 
+	new_phone, 
+	:child_index => "id_placeholder") do |fb|
+  render("phone_fields", :f => fb)
+ end
+ js = escape_javascript(fields)
+ fn = html_escape("addPhone($('#phones'), \"#{js}\")")
+      concat(raw("<a href=\"#\" class=\"btn btn-primary\" onclick=\"#{fn}\"><span class=\"glyphicon glyphicon-plus\"></span></a>"))
+%>
+```
+
