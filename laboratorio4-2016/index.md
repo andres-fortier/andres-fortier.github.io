@@ -407,7 +407,7 @@ end
   </div>
 ```
 
-```html
+```javascript
 function removePhone(linkNode) {
   var link = $(linkNode);
   var myFormGroup = link.parent();
