@@ -355,6 +355,7 @@ end
 ```
 
 * Clase 24
+  * [Transparencias](material/Clase24.pdf)
 
 ```ruby
 if @profile.phones.empty?
