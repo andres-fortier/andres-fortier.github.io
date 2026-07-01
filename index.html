@@ -1,10 +1,126 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
 
-<div class="home">
-  <h2><a href="/laboratorio4-2015/">2015 - Laboratorio de Programación 4 - UTN (SMA)</a></h2>
-  <h2><a href="/programacion3-2015/">2015 - Programación 3 - UTN (SMA)</a></h2>
-  <h2><a href="/laboratorio3-2015/">2015 - Laboratorio de Programación 3 - UTN (SMA)</a></h2>
-  <h2><a href="/laboratorio4-2016/">2016 - Laboratorio de Programación 4 - UTN (SMA)</a></h2>
-</div>
+  <!-- Elegant serif font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8e3dc;
+      --muted: rgba(232, 227, 220, 0.7);
+      --glow: rgba(255, 210, 160, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 210, 160, 0.35), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(120, 140, 255, 0.25), transparent 55%);
+  filter: blur(60px);
+  opacity: 1;
+  z-index: 0;
+}
+
+    .container {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 400;
+      font-size: clamp(3rem, 6vw, 5rem);
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .line {
+      width: 60px;
+      height: 1px;
+      background: rgba(232, 227, 220, 0.4);
+      margin: 0 auto 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(232, 227, 220, 0.4);
+      letter-spacing: 0.15em;
+    }
+
+    /* subtle grain */
+    .grain {
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E");
+      opacity: 0.08;
+      mix-blend-mode: overlay;
+      z-index: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <div class="container">
+    <div class="content">
+      <h1>Coming soon</h1>
+      <div class="line"></div>
+      <p>Something is on the way</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © <span id="year"></span>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
