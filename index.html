@@ -1,126 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
 
-  <!-- Elegant serif font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    :root {
-      --bg: #0b0c10;
-      --fg: #e8e3dc;
-      --muted: rgba(232, 227, 220, 0.7);
-      --glow: rgba(255, 210, 160, 0.12);
-    }
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --fg: #e8e3dc;
+        --muted: rgba(232, 227, 220, 0.6);
+      }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    html, body {
-      height: 100%;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: Inter, system-ui, -apple-system, sans-serif;
-      overflow: hidden;
-    }
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--fg);
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 210, 160, 0.35), transparent 60%),
-    radial-gradient(circle at 70% 70%, rgba(120, 140, 255, 0.25), transparent 55%);
-  filter: blur(60px);
-  opacity: 1;
-  z-index: 0;
-}
+      .grain {
+        pointer-events: none;
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E");
+        opacity: 0.07;
+        mix-blend-mode: overlay;
+        z-index: 3;
+      }
 
-    .container {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
+      .glow {
+        position: fixed;
+        z-index: 1;
+        pointer-events: none;
 
-    .content {
-      max-width: 600px;
-    }
+        width: 60vw;
+        height: 60vw;
 
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 400;
-      font-size: clamp(3rem, 6vw, 5rem);
-      letter-spacing: 0.02em;
-      margin-bottom: 1rem;
-    }
+        filter: blur(40px) saturate(125%);
+        opacity: 0.9;
+        mix-blend-mode: screen;
+      }
 
-    .line {
-      width: 60px;
-      height: 1px;
-      background: rgba(232, 227, 220, 0.4);
-      margin: 0 auto 1.5rem;
-    }
+      .glow--warm {
+        top: 0px;
+        left: 0px;
 
-    p {
-      font-size: 0.9rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
+        width: 800px;
+        height: 800px;
 
-    .footer {
-      position: absolute;
-      bottom: 2rem;
-      width: 100%;
-      text-align: center;
-      font-size: 0.75rem;
-      color: rgba(232, 227, 220, 0.4);
-      letter-spacing: 0.15em;
-    }
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(255, 120, 40, 0.9) 10%,
+          rgba(255, 120, 40, 0.5) 30%,
+          transparent 65%
+        );
+      }
+      .sun-ring {
+        position: fixed;
+        z-index: 2;
+        pointer-events: none;
 
-    /* subtle grain */
-    .grain {
-      pointer-events: none;
-      position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E");
-      opacity: 0.08;
-      mix-blend-mode: overlay;
-      z-index: 3;
-    }
-  </style>
-</head>
+        opacity: 0.7;
 
-<body>
-  <div class="grain"></div>
+        left: 200px;
+        top: 200px;
 
-  <div class="container">
-    <div class="content">
-      <h1>Coming soon</h1>
-      <div class="line"></div>
-      <p>Something is on the way</p>
+        width: 400px;
+        height: 400px;
+
+        transform: translate(-50%, -50%);
+        border-radius: 50%; /* ARC */
+        background: conic-gradient(
+          from 0deg,
+          transparent 0deg 0deg,
+          rgba(255, 170, 80, 0) 70deg,
+          rgb(255, 183, 106) 130deg,
+          rgb(255, 183, 106) 130deg 140deg,
+          rgb(255, 183, 106) 140deg,
+          rgba(255, 170, 80, 0) 200deg,
+          transparent 90deg 360deg
+        );
+
+        -webkit-mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 2px),
+          black 100%
+        );
+        mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 2px),
+          black 100%
+        );
+        filter: drop-shadow(0 0 10px rgba(255, 140, 60, 0.5));
+      }
+
+      .glow--cool {
+        bottom: -100px;
+        right: 0px;
+
+        width: 800px;
+        height: 800px;
+
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(80, 180, 255, 0.9) 10%,
+          rgba(80, 180, 255, 0.3) 35%,
+          transparent 70%
+        );
+      }
+
+      .moon-ring {
+        position: fixed;
+        z-index: 2;
+        pointer-events: none;
+
+        opacity: 0.7;
+
+        bottom: 50px;
+        right: 165px;
+
+        width: 230px;
+        height: 230px;
+
+        transform: translate(-50%, -50%);
+        border-radius: 50%; /* ARC */
+        background: conic-gradient(
+          from 0deg,
+          transparent 0deg 0deg,
+          rgba(255, 170, 80, 0) 240deg,
+          rgba(80, 180, 255, 0.8) 280deg,
+          rgba(80, 180, 255) 280deg 290deg,
+          rgba(80, 180, 255, 0.8) 290deg,
+          rgba(255, 170, 80, 0) 350deg,
+          transparent 90deg 360deg
+        );
+
+        -webkit-mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 2px),
+          black 100%
+        );
+        mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 2px),
+          black 100%
+        );
+        filter: drop-shadow(0 0 10px rgba(80, 180, 255, 0.5));
+      }
+
+      .container {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .content {
+        max-width: 700px;
+      }
+
+      h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: clamp(3rem, 6vw, 5rem);
+        letter-spacing: 0.03em;
+        margin-bottom: 1rem;
+      }
+
+      .line {
+        width: 60px;
+        height: 1px;
+        background: rgba(232, 227, 220, 0.4);
+        margin: 0 auto 1.5rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        text-align: center;
+        font-size: 0.7rem;
+        color: rgba(232, 227, 220, 0.4);
+        letter-spacing: 0.15em;
+        z-index: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grain"></div>
+    <div class="glow glow--warm"></div>
+    <div class="sun-ring"></div>
+
+    <div class="glow glow--cool"></div>
+    <div class="moon-ring"></div>
+
+    <div class="container">
+      <div class="content">
+        <h1>Coming soon</h1>
+        <div class="line"></div>
+        <p>Something is on the way</p>
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    © <span id="year"></span>
-  </div>
+    <div class="footer">© <span id="year"></span></div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
